@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>희노애락 뮤직</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="emotion-header">
+    <button id="menu-toggle">≡</button>
+    <div id="current-emotion">喜</div>
+  </nav>
+
+  <div id="emotion-menu" class="hidden">
+    <button onclick="toggleMenu()">X</button>
+    <button onclick="setEmotion('joy')">喜</button>
+    <button onclick="setEmotion('anger')">怒</button>
+    <button onclick="setEmotion('sadness')">哀</button>
+    <button onclick="setEmotion('fun')">樂</button>
+  </div>
+
+  <div id="selected-background"></div>
+
+  <main id="image-area">
+  </main>
+
+  <footer id="now-playing">
+    <small>now playing...</small>
+    <div id="track-info"></div>
+  </footer>
+
+
+  
+  <audio id="audio-player" controls style="display: none;"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
